@@ -17,8 +17,24 @@ public class CartDTO extends BaseDTO {
 
 	@Column(name = "QUANTITY",length = 225)
 	private String quantity;
+	public String getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(String totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
 	@Column(name = "PRICE",length = 225)
 	private String price;
+	public String getPrice() {
+		return price;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
 	@Column(name = "TOTAL_PRICE",length = 225)
 	private String totalPrice;
 	
@@ -30,6 +46,30 @@ public class CartDTO extends BaseDTO {
 	@JoinColumn(name="PRODUCT",nullable = false)
 	private ProductDTO product;
 	
+
+	public String getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+
+	public UserDTO getUser() {
+		return user;
+	}
+
+	public void setUser(UserDTO user) {
+		this.user = user;
+	}
+
+	public ProductDTO getProduct() {
+		return product;
+	}
+
+	public void setProduct(ProductDTO product) {
+		this.product = product;
+	}
 
 	@Override
 	public String getKey() {

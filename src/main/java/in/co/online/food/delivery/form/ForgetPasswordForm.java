@@ -13,6 +13,14 @@ import lombok.Setter;
 @Setter
 public class ForgetPasswordForm extends BaseForm {
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	@NotEmpty(message = "Email is required")
 	private String email;
 

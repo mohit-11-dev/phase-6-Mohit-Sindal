@@ -20,6 +20,54 @@ import lombok.Setter;
 @Setter
 public class ProductDTO extends BaseDTO {
 
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public byte[] getImage() {
+		return image;
+	}
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+	public long getCategoryId() {
+		return categoryId;
+	}
+	public void setCategoryId(long categoryId) {
+		this.categoryId = categoryId;
+	}
+	public CategoryDTO getCategory() {
+		return category;
+	}
+	public void setCategory(CategoryDTO category) {
+		this.category = category;
+	}
+	public Set<CartDTO> getCarts() {
+		return carts;
+	}
+	public void setCarts(Set<CartDTO> carts) {
+		this.carts = carts;
+	}
+	public Set<OrderDTO> getOrders() {
+		return orders;
+	}
+	public void setOrders(Set<OrderDTO> orders) {
+		this.orders = orders;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
 	@Column(name="NAME",length = 225)
 	private String name;
 	@Column(name="DESCRIPTION",length = 225)

@@ -10,6 +10,14 @@ import lombok.Setter;
 @Setter
 public class CartForm extends BaseForm {
 
+	public String[] getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(String[] quantity) {
+		this.quantity = quantity;
+	}
+
 	private String[] quantity;
 
 

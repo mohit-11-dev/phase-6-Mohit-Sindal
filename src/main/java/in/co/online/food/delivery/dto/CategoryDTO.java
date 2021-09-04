@@ -17,6 +17,38 @@ import lombok.Setter;
 @Getter
 public class CategoryDTO extends BaseDTO {
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public byte[] getImages() {
+		return images;
+	}
+
+	public void setImages(byte[] images) {
+		this.images = images;
+	}
+
+	public Set<CategoryDTO> getCategory() {
+		return category;
+	}
+
+	public void setCategory(Set<CategoryDTO> category) {
+		this.category = category;
+	}
+
 	@Column(name = "NAME", length = 225)
 	private String name;
 	@Column(name = "DESCRIPTION", length = 225)
